@@ -1,3 +1,4 @@
+//based on http://golang.org.pl/getting_started/02_my_tutorial.html#krotki-tutorial
 package main
 
 import "fmt"
