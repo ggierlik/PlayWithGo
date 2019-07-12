@@ -1,7 +1,8 @@
 package main //pakiet uruchomieniowy nazywa się main
 
 import "fmt"
-import funcs "hello/ex"
+import funcs "PlayWithGo/funcs"
+import objs "PlayWithGo/objs"
 
 func main() { //i mieć zdefiniowaną funkcję main()
 	fmt.Printf("hello, world\n")
@@ -25,4 +26,11 @@ func main() { //i mieć zdefiniowaną funkcję main()
 	fmt.Println("13 mod 4 = ", x)
 
 	funcs.Sum(1, 2, 3, 10, 7, 8)
+
+	ex := funcs.ExtraInt(3)
+	fmt.Println("3.isOdd = ", ex.IsOdd())
+
+	r := objs.Rect{W: 10, H: 6}
+	fmt.Println("%d x %d = %d", r.W, r.H, r.Area())
+
 }
